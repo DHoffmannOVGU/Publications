@@ -1,0 +1,624 @@
+@prefix : <http://www.semanticweb.org/imran/ontologies/2023/6/untitled-ontology-9#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@base <http://www.semanticweb.org/imran/ontologies/2023/6/untitled-ontology-9#> .
+
+<http://www.semanticweb.org/iPPR-Risk-Ontology> rdf:type owl:Ontology .
+
+#################################################################
+#    Object Properties
+#################################################################
+
+###  http://webprotege.stanford.edu/R72zuhndpyxptuz3r0BsXCV
+<http://webprotege.stanford.edu/R72zuhndpyxptuz3r0BsXCV> rdf:type owl:ObjectProperty ;
+                                                         rdfs:label "hasPart" .
+
+
+###  http://webprotege.stanford.edu/R8xN2TDzs74lokFp149Iz4A
+<http://webprotege.stanford.edu/R8xN2TDzs74lokFp149Iz4A> rdf:type owl:ObjectProperty ;
+                                                         rdfs:subPropertyOf <http://www.semanticweb.org/iPPR-Risk-Ontology/IR#isOutputOf> ;
+                                                         rdfs:label "hasOutput" .
+
+
+###  http://webprotege.stanford.edu/R9PKhUT0kwtjAGB07MrZDO6
+<http://webprotege.stanford.edu/R9PKhUT0kwtjAGB07MrZDO6> rdf:type owl:ObjectProperty ;
+                                                         rdfs:subPropertyOf <http://webprotege.stanford.edu/RCxwbLy18Y3KLYJ9XKFSWUt> ;
+                                                         rdfs:domain <http://www.semanticweb.org/iPPR-Risk-Ontology/Process> ;
+                                                         rdfs:range <http://webprotege.stanford.edu/RfDHuerrgR4jMmiKnuD2QT> ;
+                                                         rdfs:label "hasFailureMode" .
+
+
+###  http://webprotege.stanford.edu/RBRJ2NYE1HEWEXg1uxDIp41
+<http://webprotege.stanford.edu/RBRJ2NYE1HEWEXg1uxDIp41> rdf:type owl:ObjectProperty ;
+                                                         rdfs:subPropertyOf owl:topObjectProperty ;
+                                                         owl:inverseOf <http://webprotege.stanford.edu/RBhhtYge6s4myPClalk6TR9> ;
+                                                         rdfs:domain <http://webprotege.stanford.edu/R8eAwQVeV8rc3D2LQILSboj> ;
+                                                         rdfs:range <http://www.semanticweb.org/iPPR-Risk-Ontology/Resource> ;
+                                                         rdfs:label "isCauseOf" .
+
+
+###  http://webprotege.stanford.edu/RBgRpSxy1AgSv3jczo9KKmm
+<http://webprotege.stanford.edu/RBgRpSxy1AgSv3jczo9KKmm> rdf:type owl:ObjectProperty ;
+                                                         rdfs:subPropertyOf <http://webprotege.stanford.edu/RQ9iDH12mDsC1aXkaPabeh> ;
+                                                         rdfs:domain <http://webprotege.stanford.edu/RfDHuerrgR4jMmiKnuD2QT> ;
+                                                         rdfs:range <http://webprotege.stanford.edu/R8eAwQVeV8rc3D2LQILSboj> ;
+                                                         rdfs:label "causedBy" .
+
+
+###  http://webprotege.stanford.edu/RBhhtYge6s4myPClalk6TR9
+<http://webprotege.stanford.edu/RBhhtYge6s4myPClalk6TR9> rdf:type owl:ObjectProperty ;
+                                                         rdfs:subPropertyOf <http://webprotege.stanford.edu/RBRJ2NYE1HEWEXg1uxDIp41> ;
+                                                         rdfs:domain <http://www.semanticweb.org/iPPR-Risk-Ontology/Resource> ;
+                                                         rdfs:range <http://webprotege.stanford.edu/R8eAwQVeV8rc3D2LQILSboj> ;
+                                                         rdfs:label "hasCause" .
+
+
+###  http://webprotege.stanford.edu/RBzDsaxIcWpIT7FoOCKIJTp
+<http://webprotege.stanford.edu/RBzDsaxIcWpIT7FoOCKIJTp> rdf:type owl:ObjectProperty ;
+                                                         rdfs:subPropertyOf <http://webprotege.stanford.edu/RYdFB2EZOu4CeOhl68PaLE> ;
+                                                         rdfs:domain <http://www.semanticweb.org/iPPR-Risk-Ontology/Product> ;
+                                                         rdfs:range <http://webprotege.stanford.edu/RBowe3HsNitvUMK2rudLFKQ> ;
+                                                         rdfs:label "hasEffect" .
+
+
+###  http://webprotege.stanford.edu/RCHvdkYMtROSCRXJ4qGAGsZ
+<http://webprotege.stanford.edu/RCHvdkYMtROSCRXJ4qGAGsZ> rdf:type owl:ObjectProperty ;
+                                                         rdfs:subPropertyOf <http://webprotege.stanford.edu/RDWb5OUCnnj75153fvFS0Mu> ;
+                                                         rdfs:domain <http://webprotege.stanford.edu/RBowe3HsNitvUMK2rudLFKQ> ;
+                                                         rdfs:range <http://webprotege.stanford.edu/RfDHuerrgR4jMmiKnuD2QT> ;
+                                                         rdfs:label "effectedBy" .
+
+
+###  http://webprotege.stanford.edu/RCaqY8oq7GKHQLvSiQApiB8
+<http://webprotege.stanford.edu/RCaqY8oq7GKHQLvSiQApiB8> rdf:type owl:ObjectProperty ;
+                                                         rdfs:subPropertyOf <http://www.semanticweb.org/iPPR-Risk-Ontology/IR#isInputOf> ;
+                                                         rdfs:label "hasInput" .
+
+
+###  http://webprotege.stanford.edu/RCw298Wj8wHWvXIgVviYucD
+<http://webprotege.stanford.edu/RCw298Wj8wHWvXIgVviYucD> rdf:type owl:ObjectProperty ;
+                                                         rdfs:subPropertyOf owl:topObjectProperty ;
+                                                         rdfs:domain <http://www.semanticweb.org/iPPR-Risk-Ontology/Process> ;
+                                                         rdfs:range <http://www.semanticweb.org/iPPR-Risk-Ontology/Resource> ;
+                                                         rdfs:label "isExecutedBy" .
+
+
+###  http://webprotege.stanford.edu/RCxwbLy18Y3KLYJ9XKFSWUt
+<http://webprotege.stanford.edu/RCxwbLy18Y3KLYJ9XKFSWUt> rdf:type owl:ObjectProperty ;
+                                                         rdfs:subPropertyOf owl:topObjectProperty ;
+                                                         rdfs:domain <http://webprotege.stanford.edu/RfDHuerrgR4jMmiKnuD2QT> ;
+                                                         rdfs:range <http://www.semanticweb.org/iPPR-Risk-Ontology/Process> ;
+                                                         rdfs:label "isFailureModeOf" .
+
+
+###  http://webprotege.stanford.edu/RDWb5OUCnnj75153fvFS0Mu
+<http://webprotege.stanford.edu/RDWb5OUCnnj75153fvFS0Mu> rdf:type owl:ObjectProperty ;
+                                                         rdfs:subPropertyOf owl:topObjectProperty ;
+                                                         rdfs:domain <http://webprotege.stanford.edu/RfDHuerrgR4jMmiKnuD2QT> ;
+                                                         rdfs:range <http://webprotege.stanford.edu/RBowe3HsNitvUMK2rudLFKQ> ;
+                                                         rdfs:label "effects" .
+
+
+###  http://webprotege.stanford.edu/RDXInfDlLUUJoMUGTjnk38V
+<http://webprotege.stanford.edu/RDXInfDlLUUJoMUGTjnk38V> rdf:type owl:ObjectProperty ;
+                                                         rdfs:subPropertyOf <http://webprotege.stanford.edu/RCw298Wj8wHWvXIgVviYucD> ;
+                                                         rdfs:label "executes" .
+
+
+###  http://webprotege.stanford.edu/RQ9iDH12mDsC1aXkaPabeh
+<http://webprotege.stanford.edu/RQ9iDH12mDsC1aXkaPabeh> rdf:type owl:ObjectProperty ;
+                                                        rdfs:subPropertyOf owl:topObjectProperty ;
+                                                        rdfs:domain <http://webprotege.stanford.edu/R8eAwQVeV8rc3D2LQILSboj> ;
+                                                        rdfs:range <http://webprotege.stanford.edu/RfDHuerrgR4jMmiKnuD2QT> ;
+                                                        rdfs:label "causes" .
+
+
+###  http://webprotege.stanford.edu/RYdFB2EZOu4CeOhl68PaLE
+<http://webprotege.stanford.edu/RYdFB2EZOu4CeOhl68PaLE> rdf:type owl:ObjectProperty ;
+                                                        rdfs:subPropertyOf owl:topObjectProperty ;
+                                                        rdfs:domain <http://webprotege.stanford.edu/RBowe3HsNitvUMK2rudLFKQ> ;
+                                                        rdfs:range <http://www.semanticweb.org/iPPR-Risk-Ontology/Product> ;
+                                                        rdfs:label "isEffectOf" .
+
+
+###  http://www.semanticweb.org/iPPR-Risk-Ontology/IR#isInputOf
+<http://www.semanticweb.org/iPPR-Risk-Ontology/IR#isInputOf> rdf:type owl:ObjectProperty ;
+                                                             rdfs:subPropertyOf owl:topObjectProperty ;
+                                                             rdfs:domain <http://www.semanticweb.org/iPPR-Risk-Ontology/Product> ;
+                                                             rdfs:range <http://www.semanticweb.org/iPPR-Risk-Ontology/Process> ;
+                                                             rdfs:label "isInputOf" .
+
+
+###  http://www.semanticweb.org/iPPR-Risk-Ontology/IR#isOutputOf
+<http://www.semanticweb.org/iPPR-Risk-Ontology/IR#isOutputOf> rdf:type owl:ObjectProperty ;
+                                                              rdfs:domain <http://www.semanticweb.org/iPPR-Risk-Ontology/Product> ;
+                                                              rdfs:range <http://www.semanticweb.org/iPPR-Risk-Ontology/Process> ;
+                                                              rdfs:label "isOutputOf" .
+
+
+#################################################################
+#    Data properties
+#################################################################
+
+###  http://www.semanticweb.org/iPPR-Risk-Ontology/Entity_name
+<http://www.semanticweb.org/iPPR-Risk-Ontology/Entity_name> rdf:type owl:DatatypeProperty ;
+                                                            rdfs:domain <http://www.semanticweb.org/iPPR-Risk-Ontology/Process> ,
+                                                                        <http://www.semanticweb.org/iPPR-Risk-Ontology/Product> ,
+                                                                        <http://www.semanticweb.org/iPPR-Risk-Ontology/Resource> ;
+                                                            rdfs:range xsd:string .
+
+
+###  http://www.semanticweb.org/iPPR-Risk-Ontology/Part_discription
+<http://www.semanticweb.org/iPPR-Risk-Ontology/Part_discription> rdf:type owl:DatatypeProperty .
+
+
+###  http://www.semanticweb.org/iPPR-Risk-Ontology/Process_discription
+<http://www.semanticweb.org/iPPR-Risk-Ontology/Process_discription> rdf:type owl:DatatypeProperty .
+
+
+###  http://www.semanticweb.org/iPPR-Risk-Ontology/part_name
+<http://www.semanticweb.org/iPPR-Risk-Ontology/part_name> rdf:type owl:DatatypeProperty ;
+                                                          rdfs:subPropertyOf <http://www.semanticweb.org/iPPR-Risk-Ontology/Part_discription> ;
+                                                          rdfs:domain <http://www.semanticweb.org/iPPR-Risk-Ontology/Product> ,
+                                                                      <http://www.semanticweb.org/iPPR-Risk-Ontology/Resource> ;
+                                                          rdfs:range xsd:string .
+
+
+###  http://www.semanticweb.org/iPPR-Risk-Ontology/part_number
+<http://www.semanticweb.org/iPPR-Risk-Ontology/part_number> rdf:type owl:DatatypeProperty ;
+                                                            rdfs:subPropertyOf <http://www.semanticweb.org/iPPR-Risk-Ontology/Part_discription> ;
+                                                            rdfs:domain <http://www.semanticweb.org/iPPR-Risk-Ontology/Product> ,
+                                                                        <http://www.semanticweb.org/iPPR-Risk-Ontology/Resource> ;
+                                                            rdfs:range xsd:integer .
+
+
+###  http://www.semanticweb.org/iPPR-Risk-Ontology/process_name
+<http://www.semanticweb.org/iPPR-Risk-Ontology/process_name> rdf:type owl:DatatypeProperty ;
+                                                             rdfs:subPropertyOf <http://www.semanticweb.org/iPPR-Risk-Ontology/Process_discription> ;
+                                                             rdfs:domain <http://www.semanticweb.org/iPPR-Risk-Ontology/Process> ;
+                                                             rdfs:range xsd:string .
+
+
+###  http://www.semanticweb.org/iPPR-Risk-Ontology/process_number
+<http://www.semanticweb.org/iPPR-Risk-Ontology/process_number> rdf:type owl:DatatypeProperty ;
+                                                               rdfs:subPropertyOf <http://www.semanticweb.org/iPPR-Risk-Ontology/Process_discription> ;
+                                                               rdfs:domain <http://www.semanticweb.org/iPPR-Risk-Ontology/Process> ;
+                                                               rdfs:range xsd:integer .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+###  http://webprotege.stanford.edu/R2EwmHEaV0vn0dBWPT134g
+<http://webprotege.stanford.edu/R2EwmHEaV0vn0dBWPT134g> rdf:type owl:Class ;
+                                                        rdfs:subClassOf <http://webprotege.stanford.edu/RBowe3HsNitvUMK2rudLFKQ> ,
+                                                                        [ rdf:type owl:Restriction ;
+                                                                          owl:onProperty <http://webprotege.stanford.edu/RCHvdkYMtROSCRXJ4qGAGsZ> ;
+                                                                          owl:someValuesFrom <http://webprotege.stanford.edu/R9mq9RlxR13iOMVZrZfsXdl>
+                                                                        ] ;
+                                                        rdfs:label "Effect Class 1" .
+
+
+###  http://webprotege.stanford.edu/R5XJqrP9MGGXfgoPEQf7XC
+<http://webprotege.stanford.edu/R5XJqrP9MGGXfgoPEQf7XC> rdf:type owl:Class ;
+                                                        rdfs:subClassOf <http://www.semanticweb.org/iPPR-Risk-Ontology/Resource_B> ,
+                                                                        [ rdf:type owl:Restriction ;
+                                                                          owl:onProperty <http://webprotege.stanford.edu/RBhhtYge6s4myPClalk6TR9> ;
+                                                                          owl:someValuesFrom <http://webprotege.stanford.edu/RCz653TjKVkn6mYBDOVPzYD>
+                                                                        ] ;
+                                                        rdfs:label "Resource Class A2" .
+
+
+###  http://webprotege.stanford.edu/R7UnYwVjBCX1x0hmKfNDagj
+<http://webprotege.stanford.edu/R7UnYwVjBCX1x0hmKfNDagj> rdf:type owl:Class ;
+                                                         rdfs:subClassOf <http://webprotege.stanford.edu/RBowe3HsNitvUMK2rudLFKQ> ;
+                                                         rdfs:label "Under penetration" .
+
+
+###  http://webprotege.stanford.edu/R7lLKnTfYeXqkMrHy6hP9e5
+<http://webprotege.stanford.edu/R7lLKnTfYeXqkMrHy6hP9e5> rdf:type owl:Class ;
+                                                         rdfs:subClassOf <http://webprotege.stanford.edu/RDxefcrvnAMkuGvKem9i9Da> ;
+                                                         rdfs:label "Welding Porduct" .
+
+
+###  http://webprotege.stanford.edu/R80917Mtkjwl3OheiVVtfjW
+<http://webprotege.stanford.edu/R80917Mtkjwl3OheiVVtfjW> rdf:type owl:Class ;
+                                                         rdfs:subClassOf <http://webprotege.stanford.edu/R8SxOGUJNcyarGXCJr23rPW> ;
+                                                         rdfs:label "Laser Welding" .
+
+
+###  http://webprotege.stanford.edu/R87u2zTNCmvvZEdcxzE1pms
+<http://webprotege.stanford.edu/R87u2zTNCmvvZEdcxzE1pms> rdf:type owl:Class ;
+                                                         rdfs:subClassOf <http://webprotege.stanford.edu/R7lLKnTfYeXqkMrHy6hP9e5> ;
+                                                         rdfs:label "Welded Aluminium" .
+
+
+###  http://webprotege.stanford.edu/R8Per3qUVY8lFUlRm8cjmr0
+<http://webprotege.stanford.edu/R8Per3qUVY8lFUlRm8cjmr0> rdf:type owl:Class ;
+                                                         rdfs:subClassOf <http://webprotege.stanford.edu/R8eAwQVeV8rc3D2LQILSboj> ,
+                                                                         [ rdf:type owl:Restriction ;
+                                                                           owl:onProperty <http://webprotege.stanford.edu/RQ9iDH12mDsC1aXkaPabeh> ;
+                                                                           owl:someValuesFrom <http://webprotege.stanford.edu/R9mq9RlxR13iOMVZrZfsXdl>
+                                                                         ] ;
+                                                         rdfs:label "Cause Class 1" .
+
+
+###  http://webprotege.stanford.edu/R8QYgsQ1xa1KJQVnXUbNBS
+<http://webprotege.stanford.edu/R8QYgsQ1xa1KJQVnXUbNBS> rdf:type owl:Class ;
+                                                        rdfs:subClassOf <http://webprotege.stanford.edu/R7lLKnTfYeXqkMrHy6hP9e5> ;
+                                                        rdfs:label "Welded Copper" .
+
+
+###  http://webprotege.stanford.edu/R8SxOGUJNcyarGXCJr23rPW
+<http://webprotege.stanford.edu/R8SxOGUJNcyarGXCJr23rPW> rdf:type owl:Class ;
+                                                         rdfs:subClassOf <http://webprotege.stanford.edu/R8tDsNY0JXfj6RVayclr48T> ;
+                                                         rdfs:label "Welding" .
+
+
+###  http://webprotege.stanford.edu/R8eAwQVeV8rc3D2LQILSboj
+<http://webprotege.stanford.edu/R8eAwQVeV8rc3D2LQILSboj> rdf:type owl:Class ;
+                                                         rdfs:subClassOf <http://webprotege.stanford.edu/RBM9pFL1yxGale6xlSFUR7f> ;
+                                                         rdfs:label "Cause" .
+
+
+###  http://webprotege.stanford.edu/R8lSr6RD572Uo3fAm2xvAUF
+<http://webprotege.stanford.edu/R8lSr6RD572Uo3fAm2xvAUF> rdf:type owl:Class ;
+                                                         rdfs:subClassOf <http://webprotege.stanford.edu/RBowe3HsNitvUMK2rudLFKQ> ;
+                                                         rdfs:label "Inaccurate weld dimension" .
+
+
+###  http://webprotege.stanford.edu/R8pkFdrGIgA5Y51lQn5Bqxo
+<http://webprotege.stanford.edu/R8pkFdrGIgA5Y51lQn5Bqxo> rdf:type owl:Class ;
+                                                         rdfs:subClassOf <http://webprotege.stanford.edu/R8eAwQVeV8rc3D2LQILSboj> ;
+                                                         rdfs:label "Misconfigured laser power" .
+
+
+###  http://webprotege.stanford.edu/R8tDsNY0JXfj6RVayclr48T
+<http://webprotege.stanford.edu/R8tDsNY0JXfj6RVayclr48T> rdf:type owl:Class ;
+                                                         rdfs:subClassOf <http://www.semanticweb.org/iPPR-Risk-Ontology/Process> ;
+                                                         rdfs:label "Joining" .
+
+
+###  http://webprotege.stanford.edu/R8x0J9hGRY900SAjmk90nqZ
+<http://webprotege.stanford.edu/R8x0J9hGRY900SAjmk90nqZ> rdf:type owl:Class ;
+                                                         rdfs:subClassOf <http://webprotege.stanford.edu/R8eAwQVeV8rc3D2LQILSboj> ;
+                                                         rdfs:label "Contaminated gas" .
+
+
+###  http://webprotege.stanford.edu/R9VPKldPtfYE1uSaKBvanjS
+<http://webprotege.stanford.edu/R9VPKldPtfYE1uSaKBvanjS> rdf:type owl:Class ;
+                                                         rdfs:subClassOf <http://www.semanticweb.org/iPPR-Risk-Ontology/Resource> ;
+                                                         rdfs:label "Machine" .
+
+
+###  http://webprotege.stanford.edu/R9jkkQrhd5g4Qbs2ymVr5X6
+<http://webprotege.stanford.edu/R9jkkQrhd5g4Qbs2ymVr5X6> rdf:type owl:Class ;
+                                                         rdfs:subClassOf <http://www.semanticweb.org/iPPR-Risk-Ontology/Process_A> ;
+                                                         rdfs:label "Process Class B1" .
+
+
+###  http://webprotege.stanford.edu/R9mq9RlxR13iOMVZrZfsXdl
+<http://webprotege.stanford.edu/R9mq9RlxR13iOMVZrZfsXdl> rdf:type owl:Class ;
+                                                         rdfs:subClassOf <http://webprotege.stanford.edu/RfDHuerrgR4jMmiKnuD2QT> ,
+                                                                         [ rdf:type owl:Restriction ;
+                                                                           owl:onProperty <http://webprotege.stanford.edu/RBgRpSxy1AgSv3jczo9KKmm> ;
+                                                                           owl:someValuesFrom <http://webprotege.stanford.edu/R8Per3qUVY8lFUlRm8cjmr0>
+                                                                         ] ,
+                                                                         [ rdf:type owl:Restriction ;
+                                                                           owl:onProperty <http://webprotege.stanford.edu/RBgRpSxy1AgSv3jczo9KKmm> ;
+                                                                           owl:someValuesFrom <http://webprotege.stanford.edu/RCz653TjKVkn6mYBDOVPzYD>
+                                                                         ] ;
+                                                         rdfs:label "Failure Mode Class 1" .
+
+
+###  http://webprotege.stanford.edu/R9qIxKKJMVIdxHRGpaETNPr
+<http://webprotege.stanford.edu/R9qIxKKJMVIdxHRGpaETNPr> rdf:type owl:Class ;
+                                                         rdfs:subClassOf <http://www.semanticweb.org/iPPR-Risk-Ontology/Product_A> ,
+                                                                         [ rdf:type owl:Restriction ;
+                                                                           owl:onProperty <http://webprotege.stanford.edu/RBzDsaxIcWpIT7FoOCKIJTp> ;
+                                                                           owl:someValuesFrom <http://webprotege.stanford.edu/RDIcz38smbhULUnR0owdD6H>
+                                                                         ] ;
+                                                         rdfs:label "Product Class C2" .
+
+
+###  http://webprotege.stanford.edu/RBM9pFL1yxGale6xlSFUR7f
+<http://webprotege.stanford.edu/RBM9pFL1yxGale6xlSFUR7f> rdf:type owl:Class ;
+                                                         rdfs:label "Risk Asset" .
+
+
+###  http://webprotege.stanford.edu/RBPMkoMEph2W470u4iu8qlS
+<http://webprotege.stanford.edu/RBPMkoMEph2W470u4iu8qlS> rdf:type owl:Class ;
+                                                         rdfs:subClassOf <http://webprotege.stanford.edu/RcgDG1uIDUyAyDjiLWelma> ;
+                                                         rdfs:label "Laser B" .
+
+
+###  http://webprotege.stanford.edu/RBaAAPISREYIp9IibPBGoyN
+<http://webprotege.stanford.edu/RBaAAPISREYIp9IibPBGoyN> rdf:type owl:Class ;
+                                                         rdfs:label "Manufacturing Asset" .
+
+
+###  http://webprotege.stanford.edu/RBe3uqjYsxVmZSo2MECo3i7
+<http://webprotege.stanford.edu/RBe3uqjYsxVmZSo2MECo3i7> rdf:type owl:Class ;
+                                                         rdfs:subClassOf <http://www.semanticweb.org/iPPR-Risk-Ontology/Product> ;
+                                                         rdfs:label "Consumables" .
+
+
+###  http://webprotege.stanford.edu/RBowe3HsNitvUMK2rudLFKQ
+<http://webprotege.stanford.edu/RBowe3HsNitvUMK2rudLFKQ> rdf:type owl:Class ;
+                                                         rdfs:subClassOf <http://webprotege.stanford.edu/RBM9pFL1yxGale6xlSFUR7f> ;
+                                                         rdfs:label "Effect" .
+
+
+###  http://webprotege.stanford.edu/RBtD1GjNxQuFCGKHYdvIJyu
+<http://webprotege.stanford.edu/RBtD1GjNxQuFCGKHYdvIJyu> rdf:type owl:Class ;
+                                                         rdfs:subClassOf <http://webprotege.stanford.edu/RBe3uqjYsxVmZSo2MECo3i7> ;
+                                                         rdfs:label "Shielding gas" .
+
+
+###  http://webprotege.stanford.edu/RCAa4NpkgDpFf1zUxPMztWl
+<http://webprotege.stanford.edu/RCAa4NpkgDpFf1zUxPMztWl> rdf:type owl:Class ;
+                                                         rdfs:subClassOf <http://webprotege.stanford.edu/RfDHuerrgR4jMmiKnuD2QT> ;
+                                                         rdfs:label "Weld overpowering" .
+
+
+###  http://webprotege.stanford.edu/RCz653TjKVkn6mYBDOVPzYD
+<http://webprotege.stanford.edu/RCz653TjKVkn6mYBDOVPzYD> rdf:type owl:Class ;
+                                                         rdfs:subClassOf <http://webprotege.stanford.edu/R8eAwQVeV8rc3D2LQILSboj> ,
+                                                                         [ rdf:type owl:Restriction ;
+                                                                           owl:onProperty <http://webprotege.stanford.edu/RQ9iDH12mDsC1aXkaPabeh> ;
+                                                                           owl:someValuesFrom <http://webprotege.stanford.edu/R9mq9RlxR13iOMVZrZfsXdl>
+                                                                         ] ;
+                                                         rdfs:label "Cause Class 2" .
+
+
+###  http://webprotege.stanford.edu/RDIcz38smbhULUnR0owdD6H
+<http://webprotege.stanford.edu/RDIcz38smbhULUnR0owdD6H> rdf:type owl:Class ;
+                                                         rdfs:subClassOf <http://webprotege.stanford.edu/RBowe3HsNitvUMK2rudLFKQ> ,
+                                                                         [ rdf:type owl:Restriction ;
+                                                                           owl:onProperty <http://webprotege.stanford.edu/RCHvdkYMtROSCRXJ4qGAGsZ> ;
+                                                                           owl:someValuesFrom <http://webprotege.stanford.edu/R9mq9RlxR13iOMVZrZfsXdl>
+                                                                         ] ,
+                                                                         [ rdf:type owl:Restriction ;
+                                                                           owl:onProperty <http://webprotege.stanford.edu/RYdFB2EZOu4CeOhl68PaLE> ;
+                                                                           owl:someValuesFrom <http://webprotege.stanford.edu/R9qIxKKJMVIdxHRGpaETNPr>
+                                                                         ] ;
+                                                         rdfs:label "Effect Class 2" .
+
+
+###  http://webprotege.stanford.edu/RDZsHPEaGKHK65LYugSCfTj
+<http://webprotege.stanford.edu/RDZsHPEaGKHK65LYugSCfTj> rdf:type owl:Class ;
+                                                         rdfs:subClassOf <http://webprotege.stanford.edu/R8pkFdrGIgA5Y51lQn5Bqxo> ;
+                                                         rdfs:label "Miscalibrated laser" .
+
+
+###  http://webprotege.stanford.edu/RDxefcrvnAMkuGvKem9i9Da
+<http://webprotege.stanford.edu/RDxefcrvnAMkuGvKem9i9Da> rdf:type owl:Class ;
+                                                         rdfs:subClassOf <http://www.semanticweb.org/iPPR-Risk-Ontology/Product> ;
+                                                         rdfs:label "Joined Product" .
+
+
+###  http://webprotege.stanford.edu/RQUZQoqUUh9ywVheKrQDpb
+<http://webprotege.stanford.edu/RQUZQoqUUh9ywVheKrQDpb> rdf:type owl:Class ;
+                                                        rdfs:subClassOf <http://webprotege.stanford.edu/RcgDG1uIDUyAyDjiLWelma> ;
+                                                        rdfs:label "Laser A" .
+
+
+###  http://webprotege.stanford.edu/RcgDG1uIDUyAyDjiLWelma
+<http://webprotege.stanford.edu/RcgDG1uIDUyAyDjiLWelma> rdf:type owl:Class ;
+                                                        rdfs:subClassOf <http://webprotege.stanford.edu/R9VPKldPtfYE1uSaKBvanjS> ;
+                                                        rdfs:label "Laser System" .
+
+
+###  http://webprotege.stanford.edu/RfDHuerrgR4jMmiKnuD2QT
+<http://webprotege.stanford.edu/RfDHuerrgR4jMmiKnuD2QT> rdf:type owl:Class ;
+                                                        rdfs:subClassOf <http://webprotege.stanford.edu/RBM9pFL1yxGale6xlSFUR7f> ;
+                                                        rdfs:label "Failure Mode" .
+
+
+###  http://webprotege.stanford.edu/RwKoYsfYwYmd5I0goIahrd
+<http://webprotege.stanford.edu/RwKoYsfYwYmd5I0goIahrd> rdf:type owl:Class ;
+                                                        rdfs:subClassOf <http://www.semanticweb.org/iPPR-Risk-Ontology/Resource_B> ;
+                                                        rdfs:label "Resource Class A1" .
+
+
+###  http://webprotege.stanford.edu/Rx9B2KyfoWBXSEgsdrAUn0
+<http://webprotege.stanford.edu/Rx9B2KyfoWBXSEgsdrAUn0> rdf:type owl:Class ;
+                                                        rdfs:subClassOf <http://www.semanticweb.org/iPPR-Risk-Ontology/Product_A> ,
+                                                                        [ rdf:type owl:Restriction ;
+                                                                          owl:onProperty <http://webprotege.stanford.edu/RBzDsaxIcWpIT7FoOCKIJTp> ;
+                                                                          owl:someValuesFrom <http://webprotege.stanford.edu/R2EwmHEaV0vn0dBWPT134g>
+                                                                        ] ;
+                                                        rdfs:label "Product Class C1" .
+
+
+###  http://www.semanticweb.org/iPPR-Risk-Ontology/Process
+<http://www.semanticweb.org/iPPR-Risk-Ontology/Process> rdf:type owl:Class ;
+                                                        rdfs:subClassOf <http://webprotege.stanford.edu/RBaAAPISREYIp9IibPBGoyN> ;
+                                                        rdfs:label "Process" .
+
+
+###  http://www.semanticweb.org/iPPR-Risk-Ontology/Process_A
+<http://www.semanticweb.org/iPPR-Risk-Ontology/Process_A> rdf:type owl:Class ;
+                                                          rdfs:subClassOf <http://www.semanticweb.org/iPPR-Risk-Ontology/Process> ,
+                                                                          [ rdf:type owl:Restriction ;
+                                                                            owl:onProperty <http://webprotege.stanford.edu/R9PKhUT0kwtjAGB07MrZDO6> ;
+                                                                            owl:someValuesFrom <http://webprotege.stanford.edu/R9mq9RlxR13iOMVZrZfsXdl>
+                                                                          ] ;
+                                                          rdfs:label "Process Class B" .
+
+
+###  http://www.semanticweb.org/iPPR-Risk-Ontology/Product
+<http://www.semanticweb.org/iPPR-Risk-Ontology/Product> rdf:type owl:Class ;
+                                                        rdfs:subClassOf <http://webprotege.stanford.edu/RBaAAPISREYIp9IibPBGoyN> ;
+                                                        rdfs:label "Product" .
+
+
+###  http://www.semanticweb.org/iPPR-Risk-Ontology/Product_A
+<http://www.semanticweb.org/iPPR-Risk-Ontology/Product_A> rdf:type owl:Class ;
+                                                          rdfs:subClassOf <http://www.semanticweb.org/iPPR-Risk-Ontology/Product> ;
+                                                          rdfs:label "Product Class C" .
+
+
+###  http://www.semanticweb.org/iPPR-Risk-Ontology/Resource
+<http://www.semanticweb.org/iPPR-Risk-Ontology/Resource> rdf:type owl:Class ;
+                                                         rdfs:subClassOf <http://webprotege.stanford.edu/RBaAAPISREYIp9IibPBGoyN> ;
+                                                         rdfs:label "Resource" .
+
+
+###  http://www.semanticweb.org/iPPR-Risk-Ontology/Resource_B
+<http://www.semanticweb.org/iPPR-Risk-Ontology/Resource_B> rdf:type owl:Class ;
+                                                           rdfs:subClassOf <http://www.semanticweb.org/iPPR-Risk-Ontology/Resource> ,
+                                                                           [ rdf:type owl:Restriction ;
+                                                                             owl:onProperty <http://webprotege.stanford.edu/RBhhtYge6s4myPClalk6TR9> ;
+                                                                             owl:someValuesFrom <http://webprotege.stanford.edu/R8Per3qUVY8lFUlRm8cjmr0>
+                                                                           ] ;
+                                                           rdfs:label "Resource Class A" .
+
+
+#################################################################
+#    Individuals
+#################################################################
+
+###  http://webprotege.stanford.edu/R6EErwM1QquWufalZM5FOL
+<http://webprotege.stanford.edu/R6EErwM1QquWufalZM5FOL> rdf:type owl:NamedIndividual ,
+                                                                 <http://webprotege.stanford.edu/RDZsHPEaGKHK65LYugSCfTj> ;
+                                                        <http://webprotege.stanford.edu/RBRJ2NYE1HEWEXg1uxDIp41> <http://webprotege.stanford.edu/RBdplXsfLlm7SpyKJxxTW0v> ;
+                                                        <http://webprotege.stanford.edu/RQ9iDH12mDsC1aXkaPabeh> <http://webprotege.stanford.edu/RCw3GumPJV3kOxKSnwhVXyP> ;
+                                                        rdfs:label "Miscalibrated laser" .
+
+
+###  http://webprotege.stanford.edu/R7OkQyoqQI7lS3NAzXN7wJ4
+<http://webprotege.stanford.edu/R7OkQyoqQI7lS3NAzXN7wJ4> rdf:type owl:NamedIndividual ,
+                                                                  <http://webprotege.stanford.edu/R8lSr6RD572Uo3fAm2xvAUF> ,
+                                                                  [ rdf:type owl:Restriction ;
+                                                                    owl:onProperty <http://webprotege.stanford.edu/RYdFB2EZOu4CeOhl68PaLE> ;
+                                                                    owl:someValuesFrom <http://webprotege.stanford.edu/R87u2zTNCmvvZEdcxzE1pms>
+                                                                  ] ;
+                                                         <http://webprotege.stanford.edu/RCHvdkYMtROSCRXJ4qGAGsZ> <http://webprotege.stanford.edu/RCw3GumPJV3kOxKSnwhVXyP> ;
+                                                         rdfs:label "Inaccuarate weld dimention" .
+
+
+###  http://webprotege.stanford.edu/R7Rnt13HNaCfzMz1OMKuayq
+<http://webprotege.stanford.edu/R7Rnt13HNaCfzMz1OMKuayq> rdf:type owl:NamedIndividual ,
+                                                                  <http://webprotege.stanford.edu/R9qIxKKJMVIdxHRGpaETNPr> ;
+                                                         <http://www.semanticweb.org/iPPR-Risk-Ontology/IR#isOutputOf> <http://webprotege.stanford.edu/RDxyhN2L6vRHNJnmvdb4Nhr> ;
+                                                         rdfs:label "Output Product" .
+
+
+###  http://webprotege.stanford.edu/R7UFFqiHZiXdgGZS8r0HK3a
+<http://webprotege.stanford.edu/R7UFFqiHZiXdgGZS8r0HK3a> rdf:type owl:NamedIndividual ,
+                                                                  <http://webprotege.stanford.edu/R87u2zTNCmvvZEdcxzE1pms> ;
+                                                         <http://webprotege.stanford.edu/RBzDsaxIcWpIT7FoOCKIJTp> <http://webprotege.stanford.edu/R7OkQyoqQI7lS3NAzXN7wJ4> ;
+                                                         <http://www.semanticweb.org/iPPR-Risk-Ontology/IR#isOutputOf> <http://webprotege.stanford.edu/RDAHIj47ISqmzTtGhyExhVz> ;
+                                                         rdfs:label "Welded profile" .
+
+
+###  http://webprotege.stanford.edu/R7xLSFzhXWSTGPOqGUf5a34
+<http://webprotege.stanford.edu/R7xLSFzhXWSTGPOqGUf5a34> rdf:type owl:NamedIndividual ,
+                                                                  <http://webprotege.stanford.edu/R9qIxKKJMVIdxHRGpaETNPr> ;
+                                                         <http://www.semanticweb.org/iPPR-Risk-Ontology/IR#isInputOf> <http://webprotege.stanford.edu/RDxyhN2L6vRHNJnmvdb4Nhr> ;
+                                                         rdfs:label "Input Product" .
+
+
+###  http://webprotege.stanford.edu/R92y88Xs8V3k051A2Vjhhrw
+<http://webprotege.stanford.edu/R92y88Xs8V3k051A2Vjhhrw> rdf:type owl:NamedIndividual ,
+                                                                  <http://webprotege.stanford.edu/RDIcz38smbhULUnR0owdD6H> ;
+                                                         <http://webprotege.stanford.edu/RYdFB2EZOu4CeOhl68PaLE> <http://webprotege.stanford.edu/R7Rnt13HNaCfzMz1OMKuayq> ;
+                                                         rdfs:label "Effect 2" .
+
+
+###  http://webprotege.stanford.edu/R9shnQmxiLMfYtTEfRovtpx
+<http://webprotege.stanford.edu/R9shnQmxiLMfYtTEfRovtpx> rdf:type owl:NamedIndividual ,
+                                                                  <http://webprotege.stanford.edu/R9mq9RlxR13iOMVZrZfsXdl> ;
+                                                         <http://webprotege.stanford.edu/RCxwbLy18Y3KLYJ9XKFSWUt> <http://webprotege.stanford.edu/RDxyhN2L6vRHNJnmvdb4Nhr> ;
+                                                         <http://webprotege.stanford.edu/RDWb5OUCnnj75153fvFS0Mu> <http://webprotege.stanford.edu/R92y88Xs8V3k051A2Vjhhrw> ;
+                                                         rdfs:label "Failure Mode 1" .
+
+
+###  http://webprotege.stanford.edu/RB32E7Z22qEQ2yVrFfOixTQ
+<http://webprotege.stanford.edu/RB32E7Z22qEQ2yVrFfOixTQ> rdf:type owl:NamedIndividual ,
+                                                                  <http://webprotege.stanford.edu/RCz653TjKVkn6mYBDOVPzYD> ;
+                                                         <http://webprotege.stanford.edu/RBRJ2NYE1HEWEXg1uxDIp41> <http://webprotege.stanford.edu/REkgDvOLn0jT0g15gDNb7u> ;
+                                                         <http://webprotege.stanford.edu/RQ9iDH12mDsC1aXkaPabeh> <http://webprotege.stanford.edu/R9shnQmxiLMfYtTEfRovtpx> ;
+                                                         rdfs:label "Cause 2" .
+
+
+###  http://webprotege.stanford.edu/RBHJkDUAHu8pUF4vgjavCP5
+<http://webprotege.stanford.edu/RBHJkDUAHu8pUF4vgjavCP5> rdf:type owl:NamedIndividual ,
+                                                                  <http://webprotege.stanford.edu/R80917Mtkjwl3OheiVVtfjW> ;
+                                                         <http://webprotege.stanford.edu/RCw298Wj8wHWvXIgVviYucD> <http://webprotege.stanford.edu/RDAHIj47ISqmzTtGhyExhVz> ;
+                                                         rdfs:label "Aluminium Welding" .
+
+
+###  http://webprotege.stanford.edu/RBcAkWcSmBNSBT1sjnY0OnT
+<http://webprotege.stanford.edu/RBcAkWcSmBNSBT1sjnY0OnT> rdf:type owl:NamedIndividual ,
+                                                                  <http://webprotege.stanford.edu/RBtD1GjNxQuFCGKHYdvIJyu> ;
+                                                         <http://webprotege.stanford.edu/RBzDsaxIcWpIT7FoOCKIJTp> <http://webprotege.stanford.edu/R7OkQyoqQI7lS3NAzXN7wJ4> ;
+                                                         rdfs:label "Shielding gas" .
+
+
+###  http://webprotege.stanford.edu/RBdplXsfLlm7SpyKJxxTW0v
+<http://webprotege.stanford.edu/RBdplXsfLlm7SpyKJxxTW0v> rdf:type owl:NamedIndividual ,
+                                                                  <http://webprotege.stanford.edu/R8pkFdrGIgA5Y51lQn5Bqxo> ;
+                                                         <http://webprotege.stanford.edu/RBRJ2NYE1HEWEXg1uxDIp41> <http://webprotege.stanford.edu/RDAHIj47ISqmzTtGhyExhVz> ;
+                                                         <http://webprotege.stanford.edu/RQ9iDH12mDsC1aXkaPabeh> <http://webprotege.stanford.edu/R6EErwM1QquWufalZM5FOL> ;
+                                                         rdfs:label "Misconfigured laser power" .
+
+
+###  http://webprotege.stanford.edu/RCw3GumPJV3kOxKSnwhVXyP
+<http://webprotege.stanford.edu/RCw3GumPJV3kOxKSnwhVXyP> rdf:type owl:NamedIndividual ,
+                                                                  <http://webprotege.stanford.edu/RCAa4NpkgDpFf1zUxPMztWl> ;
+                                                         <http://webprotege.stanford.edu/RBgRpSxy1AgSv3jczo9KKmm> <http://webprotege.stanford.edu/R6EErwM1QquWufalZM5FOL> ,
+                                                                                                                  <http://webprotege.stanford.edu/RDmQDctNkhhjHwvBSxbxbyp> ;
+                                                         <http://webprotege.stanford.edu/RDWb5OUCnnj75153fvFS0Mu> <http://webprotege.stanford.edu/R7OkQyoqQI7lS3NAzXN7wJ4> ;
+                                                         <http://webprotege.stanford.edu/RYdFB2EZOu4CeOhl68PaLE> <http://webprotege.stanford.edu/RBHJkDUAHu8pUF4vgjavCP5> ;
+                                                         rdfs:label "Weld overpowering" .
+
+
+###  http://webprotege.stanford.edu/RDAHIj47ISqmzTtGhyExhVz
+<http://webprotege.stanford.edu/RDAHIj47ISqmzTtGhyExhVz> rdf:type owl:NamedIndividual ,
+                                                                  <http://webprotege.stanford.edu/RBPMkoMEph2W470u4iu8qlS> ,
+                                                                  [ rdf:type owl:Restriction ;
+                                                                    owl:onProperty <http://webprotege.stanford.edu/RBhhtYge6s4myPClalk6TR9> ;
+                                                                    owl:someValuesFrom <http://webprotege.stanford.edu/R8pkFdrGIgA5Y51lQn5Bqxo>
+                                                                  ] ;
+                                                         rdfs:label "Laser System" .
+
+
+###  http://webprotege.stanford.edu/RDmQDctNkhhjHwvBSxbxbyp
+<http://webprotege.stanford.edu/RDmQDctNkhhjHwvBSxbxbyp> rdf:type owl:NamedIndividual ;
+                                                         rdfs:label "Contaminated gas" .
+
+
+###  http://webprotege.stanford.edu/RDxyhN2L6vRHNJnmvdb4Nhr
+<http://webprotege.stanford.edu/RDxyhN2L6vRHNJnmvdb4Nhr> rdf:type owl:NamedIndividual ,
+                                                                  <http://webprotege.stanford.edu/R9jkkQrhd5g4Qbs2ymVr5X6> ;
+                                                         <http://webprotege.stanford.edu/RCw298Wj8wHWvXIgVviYucD> <http://webprotege.stanford.edu/REkgDvOLn0jT0g15gDNb7u> ;
+                                                         rdfs:label "Process" .
+
+
+###  http://webprotege.stanford.edu/REkgDvOLn0jT0g15gDNb7u
+<http://webprotege.stanford.edu/REkgDvOLn0jT0g15gDNb7u> rdf:type owl:NamedIndividual ,
+                                                                 <http://webprotege.stanford.edu/R5XJqrP9MGGXfgoPEQf7XC> ;
+                                                        rdfs:label "Resource" .
+
+
+###  http://webprotege.stanford.edu/RV8yu0cjX8AMZBPA39UCfD
+<http://webprotege.stanford.edu/RV8yu0cjX8AMZBPA39UCfD> rdf:type owl:NamedIndividual ,
+                                                                 <http://webprotege.stanford.edu/R7lLKnTfYeXqkMrHy6hP9e5> ;
+                                                        rdfs:label "Aluminium profiles" .
+
+
+###  http://webprotege.stanford.edu/Ru9MY908VLfWOi1yuXA106
+<http://webprotege.stanford.edu/Ru9MY908VLfWOi1yuXA106> rdf:type owl:NamedIndividual ,
+                                                                 <http://webprotege.stanford.edu/R8Per3qUVY8lFUlRm8cjmr0> ;
+                                                        <http://webprotege.stanford.edu/RBRJ2NYE1HEWEXg1uxDIp41> <http://webprotege.stanford.edu/REkgDvOLn0jT0g15gDNb7u> ;
+                                                        <http://webprotege.stanford.edu/RQ9iDH12mDsC1aXkaPabeh> <http://webprotege.stanford.edu/R9shnQmxiLMfYtTEfRovtpx> ;
+                                                        rdfs:label "Cause 1" .
+
+
+###  Generated by the OWL API (version 4.5.25.2023-02-15T19:15:49Z) https://github.com/owlcs/owlapi
